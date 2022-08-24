@@ -1,2 +1,0 @@
-#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-#  com.yh.common.core.config.LocalDateTimeSerializerConfig
