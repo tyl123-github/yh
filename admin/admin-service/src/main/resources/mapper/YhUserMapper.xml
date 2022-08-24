@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yh.admin.service.mapper.YhUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.yh.admin.service.entity.YhUser">
+            <id property="userId" column="user_id" jdbcType="BIGINT"/>
+            <result property="tenantId" column="tenant_id" jdbcType="BIGINT"/>
+            <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="mobile" column="mobile" jdbcType="VARCHAR"/>
+            <result property="profilePhoto" column="profile_photo" jdbcType="VARCHAR"/>
+            <result property="lockFlag" column="lock_flag" jdbcType="CHAR"/>
+            <result property="deleteFlag" column="delete_flag" jdbcType="CHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="createByName" column="create_by_name" jdbcType="BIGINT"/>
+            <result property="updateByName" column="update_by_name" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,tenant_id,user_name,
+        name,password,mobile,
+        profile_photo,lock_flag,delete_flag,
+        create_time,update_time,create_by_name,
+        update_by_name
+    </sql>
+</mapper>
